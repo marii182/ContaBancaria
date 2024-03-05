@@ -2,11 +2,29 @@ package conta;
 
 import java.util.Scanner;
 
+import conta.model.Conta;
+import conta.model.Conta;
 import conta.util.Cores;
 
 public class Menu {
 
 	public static void main(String[] args) {
+		
+		Conta c1 = new Conta(123456, 123, 1, "Maria dos Santos", 2500.0f);
+		c1.visualizar();
+		c1.sacar(12000.0f);
+		c1.visualizar();
+		c1.depositar(5000.0f);
+		c1.visualizar();
+		System.out.println();
+		
+		/*System.out.println("Nome do Tilular: " + c1.getTitular());
+		System.out.println("Saldo da Conta: " + c1.getSaldo());
+		System.out.println();
+		
+		c1.setSaldo(10000.0f);
+		System.out.println("Saldo da Conta: " + c1.getSaldo());*/
+		
 		Scanner leia = new Scanner(System.in);
 		
 		int opcao;
